@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.8),
+            rgba(0,0,0,0.9)
+        ),
+        url("assets/images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #d6d6d6;
+    font-family: "Segoe UI", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Main museum entrance */
+
+.hero {
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: #c9b37e;
+
+    text-shadow:
+        0 0 15px black;
+}
+
+
+.subtitle {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+
+
+.start-button,
+.category-button {
+
+    margin: 20px;
+    padding: 18px 45px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #3b3b3b,
+            #171717
+        );
+
+    border: 1px solid #8c7650;
+
+    color: #e6d6ad;
+
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+
+
+.start-button:hover,
+.category-button:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.05);
+
+    box-shadow:
+        0 15px 40px black;
+
+    background:
+        linear-gradient(
+            145deg,
+            #55452c,
+            #202020
+        );
+}
+
+
+
+.categories {
+
+    margin-top: 40px;
+
+}
+
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
