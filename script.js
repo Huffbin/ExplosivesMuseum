@@ -1,12 +1,12 @@
-const buttons = document.querySelectorAll("button");
+const startButton = document.getElementById("startButton");
+const categories = document.getElementById("categories");
 
 
-buttons.forEach(button => {
+startButton.addEventListener("click", () => {
 
-    button.addEventListener("click", () => {
+    categories.classList.add("show");
 
-        console.log(button.innerText + " selected");
-
-    });
+    startButton.style.opacity = "0";
+    startButton.style.pointerEvents = "none";
 
 });
