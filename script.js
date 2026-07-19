@@ -1,6 +1,9 @@
 const startButton = document.getElementById("startButton");
 const categories = document.getElementById("categories");
 
+const launchersButton = document.getElementById("launchersButton");
+const bombsButton = document.getElementById("bombsButton");
+const launcherOptions = document.getElementById("launcherOptions");
 
 startButton.addEventListener("click", () => {
 
@@ -10,9 +13,21 @@ startButton.addEventListener("click", () => {
     startButton.style.pointerEvents = "none";
 
 });
-const launchersButton = document.getElementById("launchersButton");
-const launcherOptions = document.getElementById("launcherOptions");
 
 launchersButton.addEventListener("click", () => {
-    launcherOptions.classList.add("show");
+
+    launcherOptions.classList.toggle("show");
+
+    if (launcherOptions.classList.contains("show")) {
+
+        bombsButton.classList.add("hidden");
+        launchersButton.classList.add("active");
+
+    } else {
+
+        bombsButton.classList.remove("hidden");
+        launchersButton.classList.remove("active");
+
+    }
+
 });

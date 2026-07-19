@@ -78,7 +78,6 @@ h1 {
 
     padding: 18px 45px;
 
-
     background:
         linear-gradient(
             145deg,
@@ -86,29 +85,18 @@ h1 {
             #171717
         );
 
-
     border: 1px solid #8c7650;
-
 
     color: #e6d6ad;
 
-
     font-size: 1.1rem;
-
 
     letter-spacing: 3px;
 
-
     cursor: pointer;
 
-
     transition:
-
-        transform .3s ease,
-
-        box-shadow .3s ease,
-
-        background .3s ease;
+        all .6s ease;
 
 }
 
@@ -224,5 +212,39 @@ h1 {
     transform: translateY(0);
 
     pointer-events: auto;
+
+}
+
+.categories {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+
+.category-button.hidden {
+
+    opacity: 0;
+
+    transform:
+        translateX(80px);
+
+    pointer-events: none;
+
+}
+
+
+
+.category-button.active {
+
+    transform:
+        translateX(50%);
 
 }
