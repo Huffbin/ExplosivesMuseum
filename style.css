@@ -201,3 +201,28 @@ h1 {
     }
 
 }
+
+.launcher-options {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+}
+
+
+.launcher-options.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+}
